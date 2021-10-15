@@ -1,0 +1,6 @@
+#!/bin/bash
+export THIS_ROOT=$(dirname $(dirname $(dirname $0)))
+PYTHONPATH=$THIS_ROOT/lbin/lib.python
+PATH=$THIS_ROOT/lbin:${PATH}
+PATH=$(dirname $0)/bin:${PATH}
+$*
